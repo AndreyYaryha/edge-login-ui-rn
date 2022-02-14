@@ -1,0 +1,68 @@
+{
+  "name": "edge-login-ui-rn",
+  "version": "0.9.29",
+  "description": "Edge login UI components, as a React Native library",
+  "keywords": [
+    "Airbitz",
+    "Edge",
+    "bitcoin",
+    "blockchain",
+    "ethereum",
+    "key management",
+    "security"
+  ],
+  "homepage": "https://github.com/AndreyYaryha/edge-login-ui-rn",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Airbitz, Inc.",
+  "main": "lib/index.js",
+  "files": [
+    "/android/*",
+    "/edge-login-ui-rn.podspec",
+    "/ios/*",
+    "/lib/*",
+    "/LICENSE",
+    "/README.md"
+  ],
+  "scripts": {
+    "prepare": "rimraf lib && tsc && cp src/index.flow.js lib/index.js.flow && cp -r src/assets lib"
+  },
+  "dependencies": {
+    "cleaners": "^0.3.1",
+    "date-fns": "^2.23.0",
+    "qrcode-generator": "^1.4.4",
+    "react-native-airship": "^0.2.6",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-keyboard-aware-scroll-view": "^0.9.1",
+    "react-native-linear-gradient": "^2.0.0",
+    "react-native-localize": "^2.0.2",
+    "react-native-mail": "^6.1.0",
+    "react-native-material-textfield": "https://github.com/EdgeApp/react-native-material-textfield.git",
+    "react-native-patina": "^0.1.6",
+    "react-native-permissions": "^3.0.1",
+    "react-native-reanimated": "^2.0.0",
+    "react-native-share": "^5.1.4",
+    "react-native-vector-icons": "^7.1.0",
+    "react-redux": "^6.0.1",
+    "redux": "~3.5.2",
+    "redux-thunk": "~2.1.0",
+    "sprintf-js": "^1.0.3",
+    "zxcvbn": "^4.4.2"
+  },
+  "devDependencies": {
+    "@react-native-community/art": "^1.0.4",
+    "@types/react-native": "^0.64.4",
+    "@types/react-native-share": "^3.3.3",
+    "@types/react-native-vector-icons": "^6.4.8",
+    "@types/react-redux": "^7.1.18",
+    "@types/sprintf-js": "^1.1.2",
+    "@types/zxcvbn": "^4.4.1",
+    "edge-core-js": "^0.18.2",
+    "flow-bin": "^0.84.0",
+    "rimraf": "^3.0.2"
+  },
+  "peerDependencies": {
+    "@react-native-community/art": "*",
+    "react": "*",
+    "react-native": "*"
+  }
+}
